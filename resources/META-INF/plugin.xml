@@ -1,0 +1,48 @@
+<idea-plugin>
+  <id>com.wellido.plugin.id</id>
+  <name>hahaforyou</name>
+  <version>1.0</version>
+  <vendor email="kp3vc.com.com" url="http://www.yourcompany.com">dormitory1-604</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+  <depends>com.intellij.modules.python</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+  <application-components>
+    <component>
+      <implementation-class>view.TbViewer</implementation-class>
+    </component>
+  </application-components>
+
+  <actions>
+    <group id="MyPlugin.SampleMenu" text="_Sample Menu" description="Sample menu">
+      <add-to-group group-id="MainMenu" anchor="last"  />
+      <action id="PluginTest.Textboxes" class="controller.actions.TextBoxes" text="Text _Boxes" description="A test menu item" />
+      <!--<action id="Myplugin.Dialogs" class="Mypackage.MyShowDialog" text="Show _Dialog" description="A test menu item" />-->
+    </group>
+    <action id="newSVG" class="controller.actions.TbGraphViewAction" text="tbSVG">
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt Q"/>
+    </action>
+  </actions>
+
+</idea-plugin>

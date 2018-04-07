@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dagreTest</title>
+    <script src = "thirdJS/lodash.js"></script>
+    <script src = "thirdJS/graphlib.js"></script>
+    <script src = "thirdJS/dagre.js"></script>
+    <script src = "thirdJS/dagre-d3.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
+    <link rel="stylesheet" href="css/svgStyle.css">
+</head>
+<body>
+    <script src="js/main.js"></script>
+    <script src="js/DataPrepare.js"></script>
+    <script src="js/DragFunction.js"></script>
+    <div id = "mainDiv">
+        <svg id = "svg" style="width: 1000px">
+            <g id = "g"></g>
+        </svg>
+    </div>
+</body>
+
+<script>
+    dataInitialization();
+    var g = drawMainSVG(DrawNodes,DrawGroups,DrawEdgs);
+    dragSvg(g);
+</script>
+</html>
