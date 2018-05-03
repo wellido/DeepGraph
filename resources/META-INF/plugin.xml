@@ -30,6 +30,7 @@
   <application-components>
     <component>
       <implementation-class>view.TbViewer</implementation-class>
+      <implementation-class>controller.project.RunTBPython</implementation-class>
     </component>
   </application-components>
 

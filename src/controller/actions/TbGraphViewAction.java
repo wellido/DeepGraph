@@ -9,26 +9,24 @@ import com.intellij.openapi.wm.ToolWindowManager;
 
 import view.TbViewer;
 import controller.project.TbGraphViewComponent;
+import controller.project.RunTBPython;
 
 public class TbGraphViewAction extends AnAction {
     private ToolWindow getToolWindow(Project project) {
-        System.out.println(ToolWindowManager.getInstance(project).getToolWindow("TbGraphView"));
         return ToolWindowManager.getInstance(project).getToolWindow("TbGraphView");
     }
 
     private Project getProject(AnActionEvent event) {
         return (Project) event.getDataContext().getData("project");
     }
-//    TbViewer tbViewer = new TbViewer();
 
 
     public void actionPerformed(AnActionEvent event) {
         Project project = getProject(event);
-        System.out.println(project);
-        TbViewer tbViewer =   new TbGraphViewComponent(project).getViewerPanel();
-        System.out.println(tbViewer);
+        RunTBPython runtest = new RunTBPython();
+        runtest.getPythonConfiguration(project);
+        TbViewer tbViewer =  new TbGraphViewComponent(project).getViewerPanel();
         ToolWindow toolWindow = getToolWindow(project);
-        System.out.println(toolWindow);
         toolWindow.activate(tbViewer);
     }
 }

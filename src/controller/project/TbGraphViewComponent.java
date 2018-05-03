@@ -18,7 +18,6 @@ public class TbGraphViewComponent implements ProjectComponent {
     public TbGraphViewComponent(Project project) {
         this._project = project;
         initToolWindow();
-        System.out.println("hahaah");
     }
 
     public void initToolWindow() {

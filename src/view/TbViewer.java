@@ -40,9 +40,7 @@ public class TbViewer extends JPanel implements Runnable{
         fxPanel.setScene(scene);
     }
     public void run() {
-
     }
-
 }
 
 class Browser extends Region {
@@ -54,7 +52,7 @@ class Browser extends Region {
         //apply the styles
         getStyleClass().add("browser");
         // load the web page
-        String str = TbViewer.class.getResource("SvgTest.html").toExternalForm();
+        String str = TbViewer.class.getResource("dagrejsTest.html").toExternalForm();
         webEngine.load(str);
         //add the web view to the scene
         getChildren().add(browser);
