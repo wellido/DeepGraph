@@ -29,20 +29,21 @@
   </extensions>
   <application-components>
     <component>
-      <implementation-class>view.TbViewer</implementation-class>
+      <implementation-class>controller.project.TbViewer</implementation-class>
       <implementation-class>controller.project.RunTBPython</implementation-class>
     </component>
   </application-components>
 
   <actions>
-    <group id="MyPlugin.SampleMenu" text="_Sample Menu" description="Sample menu">
-      <add-to-group group-id="MainMenu" anchor="last"  />
-      <action id="PluginTest.Textboxes" class="controller.actions.TextBoxes" text="Text _Boxes" description="A test menu item" />
-      <!--<action id="Myplugin.Dialogs" class="Mypackage.MyShowDialog" text="Show _Dialog" description="A test menu item" />-->
-    </group>
     <action id="newSVG" class="controller.actions.TbGraphViewAction" text="tbSVG">
       <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
       <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt Q"/>
+    </action>
+      <action id="PluginTest.AutoMapping" class="controller.actions.AutoMapping" text="AutoMappingTest">
+          <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt W"/>
+      </action>
+    <action id="PluginTest.AutoMappingTest" class="controller.actions.AutoMapping" text="AutoMappingTest">
+      <!--<keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt W"/>-->
     </action>
   </actions>
 

@@ -414,15 +414,15 @@ class Reservoir(object):
   values that are kept for any given tag will always be the same, and that this
   is independent of any insertions on other tags. That is:
 
-  >>> separate_reservoir = reservoir.Reservoir(10)
-  >>> interleaved_reservoir = reservoir.Reservoir(10)
-  >>> for i in xrange(100):
-  >>>   separate_reservoir.AddItem('key1', i)
-  >>> for i in xrange(100):
-  >>>   separate_reservoir.AddItem('key2', i)
-  >>> for i in xrange(100):
-  >>>   interleaved_reservoir.AddItem('key1', i)
-  >>>   interleaved_reservoir.AddItem('key2', i)
+  # >>> separate_reservoir = reservoir.Reservoir(10)
+  # >>> interleaved_reservoir = reservoir.Reservoir(10)
+  # >>> for i in xrange(100):
+  # >>>   separate_reservoir.AddItem('key1', i)
+  # >>> for i in xrange(100):
+  # >>>   separate_reservoir.AddItem('key2', i)
+  # >>> for i in xrange(100):
+  # >>>   interleaved_reservoir.AddItem('key1', i)
+  # >>>   interleaved_reservoir.AddItem('key2', i)
 
   separate_reservoir and interleaved_reservoir will be in identical states.
 
@@ -910,7 +910,7 @@ class EventAccumulator(object):
       self._graph = event.graph_def
       self._graph_from_metagraph = False
     elif event.HasField('meta_graph_def'):
-      print('meta_graph_def')
+      # print('meta_graph_def')
       if self._meta_graph is not None:
         tf.logging.warn(('Found more than one metagraph event per run. '
                          'Overwriting the metagraph with the newest event.'))
@@ -929,7 +929,7 @@ class EventAccumulator(object):
           self._graph_from_metagraph = True
           self._graph = meta_graph.graph_def.SerializeToString()
     elif event.HasField('tagged_run_metadata'):
-      print('tagged_run_metadata')
+      # print('tagged_run_metadata')
       tag = event.tagged_run_metadata.tag
       if tag in self._tagged_metadata:
         tf.logging.warn('Found more than one "run metadata" event with tag ' +
