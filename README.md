@@ -5,5 +5,5 @@ This PyCharm plugin is the initial work of DeepGraph, which is an automated visu
 ## The preliminary results
 ![avatar](/img/ScreenShut1.PNG)
 ![avatar](/img/ScreenShut2.PNG)
-![avatar](/img/ScreenShut32.PNG)
+![avatar](/img/ScreenShut3.PNG)
 
