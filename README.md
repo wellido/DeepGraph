@@ -4,9 +4,9 @@ This PyCharm plugin is the initial work of DeepGraph, which is an automated visu
 
 ### The preliminary results
 
-<img src="/img/ScreenShut1.PNG" width = "500" height = "300" div align=center />
-<img src="/img/ScreenShut2.PNG" width = "500" height = "300" div align=center />
-<img src="/img/ScreenShut3.PNG" width = "500" height = "300" div align=center />
+<img src="/img/ScreenShut1.PNG" left = "120" width = "500" height = "300" div align=center />
+<img src="/img/ScreenShut2.PNG" left = "120" width = "500" height = "300" div align=center />
+<img src="/img/ScreenShut3.PNG" left = "120" width = "500" height = "300" div align=center />
 <!-- ![avatar](/img/ScreenShut1.PNG = 200x300 )
 ![avatar](/img/ScreenShut2.PNG = 200x300)
 ![avatar](/img/ScreenShut3.PNG = 200x300) -->
