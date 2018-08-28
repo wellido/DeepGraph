@@ -9,7 +9,7 @@ import com.intellij.ui.content.Content;
 import com.intellij.ui.content.ContentFactory;
 
 public class DeepGraphViewComponent implements ProjectComponent {
-    public static final String ID_TOOL_WINDOW = "TbGraphView";
+    public static final String ID_TOOL_WINDOW = "DeepGraphView";
     private Project _project;
     private DeepGraphViewer _deepGraphViewer;
     public DeepGraphViewComponent(Project project) {

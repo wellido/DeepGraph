@@ -54,17 +54,6 @@ class Browser extends Region {
         public void returnName(String name) {
             JSReturnName jsReturnName = new JSReturnName();
             jsReturnName.setValue(name);
-            System.out.println(jsReturnName.namereturn);
-//            ActionManager actionManager = ActionManager.getInstance();
-//            AnAction action = actionManager.getAction("PluginTest.AutoMapping");
-//            if (action == null) {
-//                System.out.println("nonono");
-//            }
-//            AnActionEvent event = new AnActionEvent();
-//            System.out.println(event.getPresentation().isEnabled());
-//            action.actionPerformed(event);
-
-
             jsReturnName.addPropertyChangeListener(new PropertyChangeListener() {
                 @Override
                 public void propertyChange(PropertyChangeEvent evt) {

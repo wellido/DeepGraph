@@ -13,17 +13,17 @@ import controller.project.JSReturnName;
 
 public class DeepGraphViewAction extends AnAction {
     private ToolWindow getToolWindow(Project project) {
-        return ToolWindowManager.getInstance(project).getToolWindow("TbGraphView");
+        return ToolWindowManager.getInstance(project).getToolWindow("DeepGraphView");
     }
 
     private Project getProject(AnActionEvent event) {
         return (Project) event.getDataContext().getData("project");
     }
-    JSReturnName jsReturnName = new JSReturnName();
-    String FlagName = jsReturnName.getValue();
+//    JSReturnName jsReturnName = new JSReturnName();
+//    String FlagName = jsReturnName.getValue();
     public void actionPerformed(AnActionEvent event) {
-        System.out.println(event);
-        System.out.println(event.getDataContext());
+//        System.out.println(event);
+//        System.out.println(event.getDataContext());
         CommonData strObj = new CommonData();
         Project project = getProject(event);
         RunTBPython runtest = new RunTBPython();
@@ -31,8 +31,5 @@ public class DeepGraphViewAction extends AnAction {
         DeepGraphViewer deepGraphViewer =  new DeepGraphViewComponent(project).getViewerPanel();
         ToolWindow toolWindow = getToolWindow(project);
         toolWindow.activate(deepGraphViewer);
-        if (FlagName != jsReturnName.getValue()) {
-            System.out.println("Here");
-        }
     }
 }

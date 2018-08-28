@@ -9,9 +9,6 @@ public class JSReturnName {
     public JSReturnName() {
         namereturn = "";
     }
-    public String getDemoName() {
-        return namereturn;
-    }
     public String getValue() {
         return this.namereturn;
     }

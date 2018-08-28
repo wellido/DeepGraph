@@ -27,7 +27,10 @@ public class AutoMapping extends AnAction {
         String CodeString = psiFile.getText();
         ReadCodes readCodes = new ReadCodes();
         KeyWordMaps = readCodes.execute(CodeString);
-        String str = '\'' + jsReturnName.namereturn + '\'';
+        for (String key : KeyWordMaps.keySet()) {
+            System.out.println(key + ":" + KeyWordMaps.get(key)[0] + " " + KeyWordMaps.get(key)[1]);
+        }
+        String str = '\'' + jsReturnName.getValue() + '\'';
         if (KeyWordMaps.get(str) != null) {
             System.out.println("test       "  + KeyWordMaps.get(str)[0] + " " +  KeyWordMaps.get(str)[1]);
             HighlightComponent highlightComponent = new HighlightComponent();

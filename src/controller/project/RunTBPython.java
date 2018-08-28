@@ -55,7 +55,7 @@ public class RunTBPython {
             System.out.println("execution error!");
         }
 //        System.out.println(commandLineState);
-        String TbPythonPluginPath = PluginManager.getPlugin(PluginId.getId("com.wellido.plugin.id")).getPath().getAbsolutePath();
+        String TbPythonPluginPath = PluginManager.getPlugin(PluginId.getId("com.wellido.plugin.DeepGraph")).getPath().getAbsolutePath();
         String PythonPath = Paths.get(TbPythonPluginPath, "lib", "plugin_event_accumulator.py").toAbsolutePath().toString();
         commandLinePatcher = commandLine -> {
             ParamsGroup paramsGroup = commandLine.getParametersList().getParamsGroup(
