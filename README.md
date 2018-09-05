@@ -2,6 +2,10 @@
 
 This PyCharm plugin is the initial work of DeepGraph, which is an automated visualization and code mapping tool for constructing the graph architecture representation from DNN source code and automatically synchronize between source code and its graph representation. Welcome to join our development.
 
+### Test at the primary stage
+
+Open this project as a IntelliJ Platform Plugin project in IDEA, build and run.
+
 ### The preliminary results
 
 <div align=center><img width="500" height="300" src="/img/ScreenShut1.PNG"/></div>
