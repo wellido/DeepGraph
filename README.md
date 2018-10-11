@@ -5,6 +5,7 @@ This PyCharm plugin is the initial work of DeepGraph, which is an automated visu
 ### Development environment
 
 JDK1.8
+
 Python3
 
 ### Test at the primary stage
