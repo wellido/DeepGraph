@@ -15,9 +15,9 @@ Open this project as a IntelliJ Platform Plugin project in IDEA, build and run.
 
 ### The preliminary results
 
-<div align=center><img width="500" height="300" src="/img/ScreenShut1.PNG"/></div>
-<div align=center><img width="500" height="300" src="/img/ScreenShut2.PNG"/></div>
-<div align=center><img width="500" height="300" src="/img/ScreenShut3.PNG"/></div>
+<div align=center><img width="500" height="300" src="/img/codemapping.gif"/></div>
+<div align=center><img width="500" height="300" src="/img/visualization.gif"/></div>
+<!-- <div align=center><img width="500" height="300" src="/img/ScreenShut3.PNG"/></div>-->
 <!-- <img src="/img/ScreenShut1.PNG" left = "120" width = "500" height = "300" div align=center />
 <img src="/img/ScreenShut2.PNG" left = "120" width = "500" height = "300" div align=center />
 <img src="/img/ScreenShut3.PNG" left = "120" width = "500" height = "300" div align=center /> -->
